@@ -136,9 +136,9 @@
 		FE6277B61CA81D98009F4A34 /* ColorComboTests */ = {
 			isa = PBXGroup;
 			children = (
+				FE6277C21CA8203E009F4A34 /* SecurityPanelSpec.m */,
 				FE6277B71CA81D98009F4A34 /* ColorComboTests.m */,
 				FE6277B91CA81D98009F4A34 /* Info.plist */,
-				FE6277C21CA8203E009F4A34 /* SecurityPanelSpec.m */,
 			);
 			path = ColorComboTests;
 			sourceTree = "<group>";
