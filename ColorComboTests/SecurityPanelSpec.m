@@ -23,16 +23,15 @@ describe(@"Security Panel", ^{
 		});
 	});
 	
-	context(@"when passed a marker color and 2 chips", ^{
-		context(@"that don't connect", ^{
-			it(@"says it cannot be unlocked", ^{
-				SecurityPanel *panel = [[SecurityPanel alloc] init];
-				
-				NSArray *chipsArray = @[@"blue,green", @"blue,green", @"blue,red"];
-				NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
-				[[returnedOrder should] equal:@"Cannot unlock master panel"];
-			});
+	context(@"when passed a marker color and not a matching chip", ^{
+		it(@"says it cannot be unlocked", ^{
+			SecurityPanel *panel = [[SecurityPanel alloc] init];
+			
+			NSArray *chipsArray = @[@"blue,green", @"blue,red"];
+			NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
+			[[returnedOrder should] equal:@"Cannot unlock master panel"];
 		});
+		
 	});
 });
 
