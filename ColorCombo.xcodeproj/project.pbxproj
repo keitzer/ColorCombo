@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370838D5BD2D845087AF6834 /* libPods-ColorComboTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B810A9ED040E3816DCC83C93 /* libPods-ColorComboTests.a */; };
 		FE62779F1CA81D97009F4A34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62779E1CA81D97009F4A34 /* main.m */; };
 		FE6277A21CA81D97009F4A34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6277A11CA81D97009F4A34 /* AppDelegate.m */; };
 		FE6277A51CA81D97009F4A34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6277A41CA81D97009F4A34 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		FE6277AA1CA81D97009F4A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6277A91CA81D97009F4A34 /* Assets.xcassets */; };
 		FE6277AD1CA81D97009F4A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6277AB1CA81D97009F4A34 /* LaunchScreen.storyboard */; };
 		FE6277B81CA81D98009F4A34 /* ColorComboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6277B71CA81D98009F4A34 /* ColorComboTests.m */; };
+		FE6277C31CA8203E009F4A34 /* SecurityPanelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6277C21CA8203E009F4A34 /* SecurityPanelSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BE1E09ECB8F675C05081C11 /* Pods-ColorComboTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorComboTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorComboTests/Pods-ColorComboTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B810A9ED040E3816DCC83C93 /* libPods-ColorComboTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorComboTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC54F561DEAFA9CB670D655A /* Pods-ColorComboTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorComboTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorComboTests/Pods-ColorComboTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE62779A1CA81D97009F4A34 /* ColorCombo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCombo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE62779E1CA81D97009F4A34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE6277A01CA81D97009F4A34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		FE6277B31CA81D98009F4A34 /* ColorComboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorComboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6277B71CA81D98009F4A34 /* ColorComboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorComboTests.m; sourceTree = "<group>"; };
 		FE6277B91CA81D98009F4A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6277C21CA8203E009F4A34 /* SecurityPanelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityPanelSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +60,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370838D5BD2D845087AF6834 /* libPods-ColorComboTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8807F58944C4049C11CB3CA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B810A9ED040E3816DCC83C93 /* libPods-ColorComboTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3E234F57944FF28133C7A19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BE1E09ECB8F675C05081C11 /* Pods-ColorComboTests.debug.xcconfig */,
+				BC54F561DEAFA9CB670D655A /* Pods-ColorComboTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE6277911CA81D97009F4A34 = {
 			isa = PBXGroup;
 			children = (
 				FE62779C1CA81D97009F4A34 /* ColorCombo */,
 				FE6277B61CA81D98009F4A34 /* ColorComboTests */,
 				FE62779B1CA81D97009F4A34 /* Products */,
+				B3E234F57944FF28133C7A19 /* Pods */,
+				8807F58944C4049C11CB3CA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +133,7 @@
 			children = (
 				FE6277B71CA81D98009F4A34 /* ColorComboTests.m */,
 				FE6277B91CA81D98009F4A34 /* Info.plist */,
+				FE6277C21CA8203E009F4A34 /* SecurityPanelSpec.m */,
 			);
 			path = ColorComboTests;
 			sourceTree = "<group>";
@@ -135,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE6277BF1CA81D98009F4A34 /* Build configuration list for PBXNativeTarget "ColorComboTests" */;
 			buildPhases = (
+				09ACB74FC4371BBEE885D901 /* Check Pods Manifest.lock */,
 				FE6277AF1CA81D98009F4A34 /* Sources */,
 				FE6277B01CA81D98009F4A34 /* Frameworks */,
 				FE6277B11CA81D98009F4A34 /* Resources */,
+				5735E3D4E6B941DE24AABB8F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +235,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09ACB74FC4371BBEE885D901 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5735E3D4E6B941DE24AABB8F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorComboTests/Pods-ColorComboTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE6277961CA81D97009F4A34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -222,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE6277B81CA81D98009F4A34 /* ColorComboTests.m in Sources */,
+				FE6277C31CA8203E009F4A34 /* SecurityPanelSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +426,7 @@
 		};
 		FE6277C01CA81D98009F4A34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BE1E09ECB8F675C05081C11 /* Pods-ColorComboTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ColorComboTests/Info.plist;
@@ -375,6 +439,7 @@
 		};
 		FE6277C11CA81D98009F4A34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC54F561DEAFA9CB670D655A /* Pods-ColorComboTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ColorComboTests/Info.plist;
@@ -404,6 +469,7 @@
 				FE6277BE1CA81D98009F4A34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE6277BF1CA81D98009F4A34 /* Build configuration list for PBXNativeTarget "ColorComboTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +478,7 @@
 				FE6277C11CA81D98009F4A34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
