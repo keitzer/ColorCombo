@@ -11,7 +11,16 @@
 @implementation SecurityPanel
 
 -(NSString *)unlockPanelWithChipsAndMarkers:(NSArray *)chipsAndMarkerArray {
-	return chipsAndMarkerArray[1];
+	if (chipsAndMarkerArray.count < 2) {
+		return @"NOT ENOUGH ELEMENTS";
+	}
+	
+	if (chipsAndMarkerArray[0] == chipsAndMarkerArray[1]) {
+		return chipsAndMarkerArray[1];
+	}
+	else {
+		return @"Cannot unlock master panel";
+	}
 }
 
 @end
