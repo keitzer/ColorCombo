@@ -16,6 +16,7 @@
 		FE6277AD1CA81D97009F4A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6277AB1CA81D97009F4A34 /* LaunchScreen.storyboard */; };
 		FE6277B81CA81D98009F4A34 /* ColorComboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6277B71CA81D98009F4A34 /* ColorComboTests.m */; };
 		FE6277C31CA8203E009F4A34 /* SecurityPanelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6277C21CA8203E009F4A34 /* SecurityPanelSpec.m */; };
+		FE6277C61CA82269009F4A34 /* SecurityPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6277C51CA82269009F4A34 /* SecurityPanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		FE6277B71CA81D98009F4A34 /* ColorComboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorComboTests.m; sourceTree = "<group>"; };
 		FE6277B91CA81D98009F4A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6277C21CA8203E009F4A34 /* SecurityPanelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityPanelSpec.m; sourceTree = "<group>"; };
+		FE6277C41CA82269009F4A34 /* SecurityPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityPanel.h; sourceTree = "<group>"; };
+		FE6277C51CA82269009F4A34 /* SecurityPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityPanel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				FE6277A11CA81D97009F4A34 /* AppDelegate.m */,
 				FE6277A31CA81D97009F4A34 /* ViewController.h */,
 				FE6277A41CA81D97009F4A34 /* ViewController.m */,
+				FE6277C41CA82269009F4A34 /* SecurityPanel.h */,
+				FE6277C51CA82269009F4A34 /* SecurityPanel.m */,
 				FE6277A61CA81D97009F4A34 /* Main.storyboard */,
 				FE6277A91CA81D97009F4A34 /* Assets.xcassets */,
 				FE6277AB1CA81D97009F4A34 /* LaunchScreen.storyboard */,
@@ -275,6 +280,7 @@
 			files = (
 				FE6277A51CA81D97009F4A34 /* ViewController.m in Sources */,
 				FE6277A21CA81D97009F4A34 /* AppDelegate.m in Sources */,
+				FE6277C61CA82269009F4A34 /* SecurityPanel.m in Sources */,
 				FE62779F1CA81D97009F4A34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

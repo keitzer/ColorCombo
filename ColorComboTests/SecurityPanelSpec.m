@@ -8,16 +8,18 @@
 
 #import <XCTest/XCTest.h>
 #import "Kiwi.h"
+#import "SecurityPanel.h"
 
-SPEC_BEGIN(SecurityPanel)
+SPEC_BEGIN(SecurityPanelSpec)
 
 describe(@"Security Panel", ^{
 	context(@"when passed a marker color and an identical chip", ^{
 		it(@"unlocks the panel", ^{
-			SecurityPanel *panel = [SecurityPanel mock];
+			SecurityPanel *panel = [[SecurityPanel alloc] init];
 			
 			NSArray *chipsArray = @[@"blue,green", @"blue,green"];
-			[panel unlockPanelWithChipsAndMarkers:chipsArray];
+			NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
+			[[returnedOrder should] equal:@"blue,green"];
 		});
 	});
 });
