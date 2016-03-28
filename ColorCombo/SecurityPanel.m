@@ -25,7 +25,6 @@
 	[chipsOnlyArray removeObjectAtIndex:0];
 	
 	NSString *solution = [self getCombinationWithRemainingChips:chipsOnlyArray forPreviousColor:self.markerColors[0]];
-	NSLog(@"%@", solution);
 	return solution;
 }
 
