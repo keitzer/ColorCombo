@@ -79,6 +79,14 @@ describe(@"Security Panel", ^{
 		});
 	});
 	
+	context(@"EX THREE: when passed a marker and 8 chips that do match", ^{
+		it(@"should print the correct order", ^{
+			NSArray *chipsArray = @[@"blue,green", @"blue,green", @"blue,yellow", @"green,yellow", @"orange,red", @"red,green", @"red,orange", @"yellow,blue", @"yellow,red"];
+			NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
+			[[returnedOrder should] equal:@"blue,yellow yellow,red red,orange orange,red red,green"];
+		});
+	});
+	
 	context(@"when passed a marker color and not a matching chip", ^{
 		it(@"says it cannot be unlocked", ^{
 			NSArray *chipsArray = @[@"blue,green", @"blue,red"];
