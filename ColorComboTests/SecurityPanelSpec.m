@@ -23,8 +23,6 @@ describe(@"Security Panel", ^{
 		});
 	});
 	
-	
-	
 	context(@"when passed a marker color and 2 chips", ^{
 		context(@"when chips align", ^{
 			it(@"should return correct order", ^{
@@ -33,6 +31,16 @@ describe(@"Security Panel", ^{
 				NSArray *chipsArray = @[@"blue,green", @"red,green", @"blue,red"];
 				NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
 				[[returnedOrder should] equal:@"blue,red red,green"];
+			});
+		});
+		
+		context(@"when chips don't align", ^{
+			it(@"should return unable to unlock", ^{
+				SecurityPanel *panel = [[SecurityPanel alloc] init];
+				
+				NSArray *chipsArray = @[@"blue,green", @"red,purple", @"blue,red"];
+				NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
+				[[returnedOrder should] equal:@"Cannot unlock master panel"];
 			});
 		});
 	});
