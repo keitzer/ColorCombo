@@ -18,24 +18,15 @@
 	if (chipsAndMarkerArray.count < 2) {
 		return @"NOT ENOUGH ELEMENTS";
 	}
-	else if (chipsAndMarkerArray.count == 2 && [chipsAndMarkerArray[0] isEqualToString:chipsAndMarkerArray[1]]) {
-		return chipsAndMarkerArray[1];
-	}
-	else {
-		
-		self.markerColors = [chipsAndMarkerArray[0] componentsSeparatedByString:@","];
-		
-		NSMutableArray *chipsOnlyArray = [chipsAndMarkerArray mutableCopy];
-		[chipsOnlyArray removeObjectAtIndex:0];
-		
-		NSString *solution = [self getCombinationWithRemainingChips:chipsOnlyArray forPreviousColor:self.markerColors[0]];
-		NSLog(@"%@", solution);
-		return solution;
-		
-	}
 	
-	//when in doubt, return "cannot unlock"
-	return @"Cannot unlock master panel";
+	self.markerColors = [chipsAndMarkerArray[0] componentsSeparatedByString:@","];
+	
+	NSMutableArray *chipsOnlyArray = [chipsAndMarkerArray mutableCopy];
+	[chipsOnlyArray removeObjectAtIndex:0];
+	
+	NSString *solution = [self getCombinationWithRemainingChips:chipsOnlyArray forPreviousColor:self.markerColors[0]];
+	NSLog(@"%@", solution);
+	return solution;
 }
 
 -(NSString*)getCombinationWithRemainingChips:(NSArray*)remainingChips forPreviousColor:(NSString*)previousColor {
