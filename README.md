@@ -16,4 +16,5 @@ pod install
 4) open xcworkspace file
 
 5a) run to device with Cmd+R
+
 5b) run tests with Cmd+U
