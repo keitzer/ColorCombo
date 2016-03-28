@@ -1,19 +1,19 @@
 # How to Install
-install cocoapods with Terminal
+1) install cocoapods with Terminal
 ```
--- sudo gem install cocoapods
--- pod setup
+sudo gem install cocoapods
+pod setup
 ```
 
-clone repo
+2) clone repo
 
-In terminal:
+3) In terminal:
 ```
 cd (directory)
 pod install
 ```
 
-open xcworkspace file
+4) open xcworkspace file
 
-run to device with Cmd+R
-run tests with Cmd+U
+5a) run to device with Cmd+R
+5b) run tests with Cmd+U
