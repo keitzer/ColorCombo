@@ -75,7 +75,7 @@ describe(@"Security Panel", ^{
 		it(@"should print the correct order", ^{
 			NSArray *chipsArray = @[@"blue,green", @"blue,yellow", @"red,orange", @"red,green", @"yellow,red", @"orange,red"];
 			NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
-			[[returnedOrder should] equal:@"Cannot unlock master panel"];
+			[[returnedOrder should] equal:@"blue,yellow yellow,red red,orange orange,red red,green"];
 		});
 	});
 	
