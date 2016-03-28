@@ -63,9 +63,17 @@ describe(@"Security Panel", ^{
 		});
 	});
 	
-	context(@"when passed a marker color and 5 chips that don't match", ^{
+	context(@"EX ONE: when passed a marker color and 5 chips that don't match", ^{
 		it(@"should say it cannot be unlocked", ^{
 			NSArray *chipsArray = @[@"blue,green", @"blue,yellow", @"red,orange", @"red,green", @"yellow,red", @"orange,purple"];
+			NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
+			[[returnedOrder should] equal:@"Cannot unlock master panel"];
+		});
+	});
+	
+	context(@"EX TWO: when passed a marker color and 5 chips that do match ", ^{
+		it(@"should print the correct order", ^{
+			NSArray *chipsArray = @[@"blue,green", @"blue,yellow", @"red,orange", @"red,green", @"yellow,red", @"orange,red"];
 			NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
 			[[returnedOrder should] equal:@"Cannot unlock master panel"];
 		});
