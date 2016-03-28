@@ -83,7 +83,7 @@ describe(@"Security Panel", ^{
 		it(@"should print the correct order", ^{
 			NSArray *chipsArray = @[@"blue,green", @"blue,green", @"blue,yellow", @"green,yellow", @"orange,red", @"red,green", @"red,orange", @"yellow,blue", @"yellow,red"];
 			NSString *returnedOrder = [panel unlockPanelWithChipsAndMarkers:chipsArray];
-			[[returnedOrder should] equal:@"blue,yellow yellow,red red,orange orange,red red,green"];
+			[[returnedOrder should] equal:@"blue,yellow yellow,red red,orange orange,red red,green green,yellow yellow,blue blue,green"];
 		});
 	});
 	
